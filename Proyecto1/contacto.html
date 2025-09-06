@@ -231,28 +231,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                     <div class="col-xl-9 col-mg-12">
-                        <form action="https://opnatur.com/enviar-contacto#validate" method="post" class="row has-validation" id="validate">
+                        <form action="https://formspree.io/f/mnnboegk" method="POST" class="row contact-form has-validation" id="validate">
                             <div class="col-xl-12 my-05">
-                                <input name="nombre" type="text" class="input-control " value="" placeholder="*Nombre:">
-                            </div>
-                            <div class="col-xl-12 my-05">
-                                <input type="text" name="apellido" class="input-control " value="" placeholder="*Apellido:">
-                            </div>
-                            <div class="col-xl-6 col-md-12 my-05">
-                                <input type="email" name="correo" class="input-control " value="" placeholder="*Correo electrónico:">
-                            </div>
-                            <div class="col-xl-6 col-md-12 my-05">
-                                <input type="tel" name="telefono" class="input-control " value="" placeholder="*Teléfono:">
+                                <input name="Nombre" type="text" class="input-control " required value="" placeholder="*Nombre:">
                             </div>
                             <div class="col-xl-12 my-05">
-                                <textarea id="mensaje" name="mensaje" class="input-control " placeholder="Mensaje:"></textarea>
+                                <input type="text" name="Apellido" class="input-control " required value="" placeholder="*Apellido:">
                             </div>
                             <div class="col-xl-6 col-md-12 my-05">
-                                <div class="g-recaptcha" data-sitekey="6Lc2my8pAAAAAJhdnJUO2lL7yoHVlBjtslLP-vfg"></div>
+                                <input type="email" name="Correo" class="input-control " required value="" placeholder="*Correo electrónico:">
                             </div>
-
-                            <div class="col-xl-6 col-md-12 my-05 text-right">
-                                <button name="contacto-enviar" value="ok-contacto" class="btn-medium btn-secondary btn-full-md extra-bold btn-pill">Enviar</button>
+                            <div class="col-xl-6 col-md-12 my-05">
+                                <input type="tel" name="Telefono" class="input-control " required value="" placeholder="*Teléfono:">
+                            </div>
+                            <div class="col-xl-12 my-05">
+                                <textarea id="mensaje" name="Mensaje" class="input-control " placeholder="Mensaje:"></textarea>
+                            </div>
+                            <div class="col-xl-6 col-md-12 my-05">
+                                <!-- El reCAPTCHA de Google no funciona en sitios estáticos sin configuración avanzada. Es mejor quitarlo por ahora. -->
+                            </div>
+                            <div class="col-xl-6 col-md-12 my-05">
+                                <button type="submit" class="btn btn-primary btn-pill btn-full-xl title-small-1 bold">Enviar Mensaje</button>
                             </div>
                         </form>
                     </div>
@@ -279,18 +278,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <h2 class="title-small-2 black c-secondary title-decor-center">Únete a la Comunidad Op-Natur</h2>
                     <p>Recibe noticias, consejos de bienestar y promociones exclusivas de nuestras marcas naturistas. Además, obtén un 10% de descuento en tu primera compra.</p>
                 </div>
-                <form action="https://opnatur.com/enviar-newsletter#newsletter-box" method="post" class="mt-1 has-validation" id="validate">
-                    <div class="mb-1">
-                        <input type="text" class="input-control " required name="nombre_n" placeholder="Nombre:" value="">
+                <form action="https://formspree.io/f/mnnboegk" method="POST" class="mt-1 has-validation">
+                    <div class="mb-1 ">
+                        <input type="text" class="input-control" required name="Nombre Suscripcion" placeholder="Nombre: " value="">
                     </div>
-                    <div class="mb-1">
-                        <input id="inputmail2" type="email" class="input-control " required name="correo_n" placeholder="Correo electrónico:" value="">
+                    <div class="mb-1 ">
+                        <input id="inputmail2" type="email" class="input-control" required name="Correo Suscripcion" placeholder="Correo electrónico: " value="">
                     </div>
-                    <div class="mb-1">
-                        <input type="tel" class="input-control " required name="whatsapp_n" placeholder="Whatsapp:" value="">
+                    <div class="mb-1 ">
+                        <input type="tel" class="input-control" required name="Whatsapp Suscripcion" placeholder="Whatsapp: " value="">
                     </div>
-                    <div class="mt-1">
-                        <button name="enviar-newsletter" value="ok-newsletter" class="btn btn-primary btn-pill btn-full-xl title-small-1 bold">Suscríbete</button>
+                    <div class="mt-1 ">
+                        <button type="submit" class="btn btn-primary btn-pill btn-full-xl title-small-1 bold ">Enviar Suscripción</button>
                     </div>
                 </form>
             </article>
